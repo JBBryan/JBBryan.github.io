@@ -1,5 +1,6 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*<--------small screens---------->*/
-
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 *{
   padding:0;
@@ -23,7 +24,6 @@ body {
   text-align: center;
   top:0;
   width: 100%;
-  /*height:130px;*/
   z-index: 1;
 }
 
@@ -69,39 +69,50 @@ li a:hover {
 
 
 /*<--------------about---------------->*/
+#about {
+  background-color: black;
+  text-align: center;
+}
+
 .about-wrapper{
-  max-width: 500px;
   margin:0 auto;
+  text-align: center;
+  background-color: #000;
 }
 .about-text {
-  padding-top: 10%;
+  padding-top: 8%;
   width: 85%;
-  color:#adadad;
+  color:#c7c7c7;
+  font-size: 17px;
   text-align: center;
-  margin: 80px 0px 0px 25px;
+  margin: 80px 0px 0px 0px;
   font-family: 'lato';
-  font-weight: 100;
+  font-weight: 200;
   display: inline-block;
+  float: center;
 }
 
 .who-we-are {
-  font-size: 30px;
-}
-
-.about-text h1 {
-  margin-bottom: 15px;
-}
+  font-weight: 300;
+  font-size: 40px;
+  max-width: 1800px
+  }
 
 .about-text h3 {
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  /*color:#32BFC3;*/
 }
 
-.about-text p{
+.story{
+  line-height: 1.8;
+  margin-top: 14px;
   margin-bottom: 25px;
 }
 
 .about-text a{
-  color: #adadad;
+  color: #c7c7c7;
+  /*padding-bottom: 30px;*/
 
 }
 
@@ -109,6 +120,7 @@ li a:hover {
   text-align: center;
   display: block;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #map_canvas iframe{
@@ -127,29 +139,28 @@ li a:hover {
 .apparel {
   text-align: center;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 90px;
+  padding-top: 15px;
+  padding-bottom: 45px;
   background-color: #F75454;
-
 }
 
 .apparel h2 {
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   font-family: 'lato';
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 100;
   color:white;
 }
 
 .apparel-holder{
-  max-width:500px;
+  max-width:300px;
   margin: 0 auto;
 }
 
 .apparel-holder a img{
-  margin-top: 15px;
-  margin-left: 15px;
   border:1px solid black;
+  height:130px;
+  width:130px;
 }
 
 .apparel p {
@@ -157,7 +168,7 @@ li a:hover {
   font-size: 20px;
   font-weight: 100;
   color:white;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /*<--------------------events--------------------->*/
@@ -166,15 +177,15 @@ li a:hover {
   background-color: black;
   color:white;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 60px;
 }
 
 #events p {
   color:#adadad;
   font-family: 'lato';
   font-weight: 100;
-  font-size: 30px;
-  padding-bottom: 55px;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 .event-holder{
   max-width: 300px;
@@ -182,11 +193,11 @@ li a:hover {
 }
 
 .upcoming {
-  padding-top: 80px;
+  padding-top: 35px;
 }
 
 .upcoming img {
-  padding-bottom: 100px
+  padding-bottom: 80px
 }
 #events .upcoming a img {
   height:200px;
@@ -204,13 +215,13 @@ li a:hover {
 #photos{
   background-color:#32BFC3;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 #photos p {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 40px;
   font-family: 'lato';
   color: white;
   font-weight: 100;
@@ -222,10 +233,179 @@ li a:hover {
 }
 
 .photo-holder a img{
-  height:100px;
-  width: 100px;
+  height:130px;
+  width: 130px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*Medium screens (641px)*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 40.063em) {
+html {
+  font-size: 90%;
+}
+.nav {
+  text-align: left;
+  height: 130px;
 }
 
+.logo{
+  height:60px;
+  width: auto;
+  margin-top:33px;
+  margin-left: 14px;
+  display: inline;
+}
+
+.nav-buttons{
+  float: right;
+  display:inline-block;
+  margin-right: 0px;
+}
+
+ul {
+  margin-top: 7px;
+}
+/*<<<<<<<<<<<<COPIED FROM LARGE>>>>>>>>>>>>>>>>>*/
+.landing {
+  position: fixed;
+  top:100px;
+  z-index: -1;
+  background-image: url('../images/back-soon.jpg');
+  background-size: 50%;
+  width:100%;
+  height: 600px;
+  display: block;
+  background-color: #000;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+
+/*<--------------about---------------->*/
+#about{
+  margin-top: 600px;
+  /*padding-bottom: 40px;*/
+}
+
+.about-wrapper{
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+
+.about-text {
+  width: 65%;
+  padding-top: 0;
+  margin: 80px 0px 0px 0px;
+  float: center;
+}
+
+.who-we-are {
+  font-size: 60px;
+}
+
+.story{
+  font-size: 20px;
+}
+
+#map_canvas {
+  text-align: center;
+  display: block;
+  margin-bottom: 0px;
+}
+
+#map_canvas iframe{
+  height: 320px;
+  width: 320px;
+}
+
+/*<-----------------apparel----------------->*/
+
+.apparel-holder{
+  max-width: 400px;
+}
+
+.apparel-holder a img{
+  height:175px;
+  width:175px;
+}
+
+
+.apparel-holder a img{
+  margin-top: 0px;
+  margin-left: 0px;
+  border:1px solid black;
+}
+
+.apparel h2 {
+  font-size: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+
+
+
+/*<--------------------events--------------------->*/
+.event-holder{
+  max-width: 800px;
+}
+
+#events {
+  padding-bottom: 150px;
+}
+
+#events p {
+  font-size: 70px;
+  padding-bottom: 55px;
+}
+
+.upcoming {
+  padding-top: 80px;
+}
+
+.upcoming img {
+  padding-bottom: 100px
+}
+#events .upcoming a img {
+  height:400px;
+  width: 300px;
+}
+#events .past a img {
+  height:175px;
+  width: 175px;
+}
+
+
+
+/*<---------------photos------------------>*/
+
+#photos{
+  background-color:#32BFC3;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.photo-holder{
+  max-width: 800px;
+}
+
+#photos p {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 70px;
+}
+
+.photo-holder a img{
+  height:175px;
+  width: 175px;
+
+}
+
+
+}
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -233,20 +413,10 @@ li a:hover {
  /*Large screens (1024px) */
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 @media (min-width: 64rem) {
+
 html {
   font-size: 100%;
-}
-.nav {
-  background-color: black;
-  color:#adadad;
-  position: fixed;
-  top:0;
-  width: 100%;
-  height:130px;
-  z-index: 1;
-  text-align: left;
 }
 
 .logo{
@@ -264,31 +434,6 @@ html {
 }
 
 
- li {
-    list-style-type: none;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: 45px;
-    margin-right: 15px;
-    font-family: 'lato';
-    font-weight: 200;
-}
-
-li a {
-  color: #adadad;
-  border: 1px solid #adadad;
-  border-radius: 5px;
-  padding: 7px 10px 10px 10px;
-  transition: all .3s ease-in;
-
-}
-
-li a:hover {
-  color: #32BFC3;
-  border-color: #32BFC3;
-
-}
 
 .landing {
   position: fixed;
@@ -309,7 +454,6 @@ li a:hover {
 /*<--------------about---------------->*/
 #about{
   margin-top: 600px;
-  background-color: #000;
 }
 
 .about-wrapper{
@@ -319,97 +463,59 @@ li a:hover {
 .about-text {
   width: 50%;
   padding-top: 0;
-  color:#adadad;
-  text-align: center;
   margin: 80px 0px 80px 25px;
-  font-family: 'lato';
-  font-weight: 100;
-  display: inline-block;
+  float: left;
 }
 
 .who-we-are {
-  font-size: 40px;
+  font-size: 60px;
 }
 
-.about-text h1 {
-  margin-bottom: 15px;
-}
-
-.about-text h3 {
-  margin-bottom: 5px;
-}
-
-.about-text p{
-  margin-bottom: 25px;
-}
-
-.about-text a{
-  color: #adadad;
+.story{
+  font-size: 20px;
 }
 
 #map_canvas {
-  margin: 80px 45px ;
-  display: inline-block;
+  margin: 160px 45px ;
   float: right;
 }
 
 #map_canvas iframe{
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
 }
 
 /*<-----------------photos----------------->*/
 
-.apparel {
-  text-align: center;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 90px;
-  background-color: #F75454;
+.apparel-holder{
+  max-width: 100%;
 }
 
-.apparel-holder{
-  width: 100%;
+.apparel-holder a img{
+  margin-top: 15px;
+  margin-left: 15px;
+
 }
 
 .apparel h2 {
-  margin-bottom: 60px;
-  font-family: 'lato';
   font-size: 70px;
-  font-weight: 100;
-  color:white;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 
-.apparel-holder a img{
-  margin-left: 15px;
-  border:1px solid black;
-}
 
-.apparel p {
-  font-family: 'lato';
-  font-size: 20px;
-  font-weight: 100;
-  color:white;
-  padding-top: 50px;
-}
 
 /*<--------------------events--------------------->*/
 .event-holder{
-  max-width: 800px;
+  max-width: 900px;
 }
 
 #events {
-  background-color: black;
-  color:white;
-  text-align: center;
   padding-bottom: 150px;
 }
 
 #events p {
-  color:#adadad;
-  font-family: 'lato';
-  font-weight: 100;
   font-size: 70px;
   padding-bottom: 55px;
 }
@@ -428,6 +534,9 @@ li a:hover {
 #events .past a img {
   height:200px;
   width: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border:1px solid #232323;
 }
 
 
@@ -441,21 +550,20 @@ li a:hover {
 }
 
 .photo-holder{
-  max-width: 100%;
+  max-width: 900px;
 }
 
 #photos p {
   padding-top: 60px;
   padding-bottom: 60px;
   font-size: 70px;
-  font-family: 'lato';
-  color: white;
-  font-weight: 100;
 }
 
 .photo-holder a img{
   height:200px;
   width: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 }
